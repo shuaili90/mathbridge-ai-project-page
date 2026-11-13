@@ -42,13 +42,6 @@ const teams = [
   <body style={`--math-garden: url("${base}illustrations/math-garden.svg")`}>
     <header class="project-header" id="top">
       <nav class="role-login-nav wrap" aria-label="Platform login"><a class="role-brand" href="#top">MathBridge AI</a><div><a href="https://dmt7tei6dr4v7.cloudfront.net/" target="_blank" rel="noopener noreferrer">Student login ↗</a><a href="https://dmt7tei6dr4v7.cloudfront.net/" target="_blank" rel="noopener noreferrer">Teacher login ↗</a><a href="https://dmt7tei6dr4v7.cloudfront.net/" target="_blank" rel="noopener noreferrer">Parent login ↗</a></div><small>One sign-in page. Use your student, teacher, or parent account.</small></nav>
-      <div class="logo-row wrap" aria-label="Project institutions, school partners, and funder">
-        <img class="utsa-logo" src={`${base}brands/ut-san-antonio-logo.svg`} alt="UT San Antonio" width="172" height="24" />
-        <img class="uf-logo" src={`${base}brands/uf-workshop.png`} alt="University of Florida" width="367" height="205" />
-        <img class="school-logo" src={`${base}brands/bonham-academy.png`} alt="Bonham Academy" width="100" height="100" />
-        <img class="dual-logo" src={`${base}brands/dual-language-lab.png`} alt="1882 Dual Language Lab School — Lenguaje Dual Asociación 1882" width="280" height="80" />
-        <img class="nsf-logo" src={`${base}brands/nsf-workshop.jpg`} alt="National Science Foundation" width="100" height="100" />
-      </div>
       <div class="template-heading">
         <p class="kicker">MATHBRIDGE AI</p>
         <AcademicHeader
@@ -118,12 +111,6 @@ const teams = [
   a { color: inherit; }
   .kicker,.module-label,.visual-label,.role-label,.core-kicker { font-size: 11px; font-weight: 750; letter-spacing: .14em; line-height: 1.6; }
   .kicker { color: var(--mb-teal); }
-  .logo-row { display: flex; align-items: center; justify-content: center; gap: 44px; padding: 28px 0; border-bottom: 1px solid var(--mb-line); min-height: 128px; }
-  .logo-row img { object-fit: contain; height: auto; flex-shrink: 1; margin: 0; }
-  .utsa-logo { width: 185px; filter: brightness(0) saturate(100%) invert(17%) sepia(20%) saturate(1489%) hue-rotate(154deg) brightness(92%) contrast(91%); }
-  .logo-row .uf-logo { width: 176px; max-height: 80px; }
-  .school-logo,.nsf-logo { width: 70px; }
-  .dual-logo { width: 166px; }
   .project-title { text-align: center; padding: 55px 0 60px; }
   .project-title > .kicker { font-size: 17px; letter-spacing: .18em; margin-bottom: 18px; }
   h1 { max-width: 1000px; margin: auto; font-size: clamp(30px, 4.1vw, 52px); line-height: 1.16; letter-spacing: -.042em; font-weight: 650; }
@@ -208,9 +195,6 @@ const teams = [
   footer strong { font-size: 16px; } footer p { text-align: right; font-size: 11px; color: var(--mb-muted); }
   footer small { grid-column: 1/-1; font-size: 9px; line-height: 1.7; color: #67777c; }
   @media (max-width: 850px) {
-    .logo-row { gap: 22px; flex-wrap: wrap; }
-    .logo-row .utsa-logo { width: 150px; } .logo-row .uf-logo { width: 140px; }
-    .dual-logo { width: 145px; } .school-logo,.nsf-logo { width: 55px; }
     .overview { gap: 30px; } .feature-row,.insight-pair { gap: 35px; }
     .connection-map { grid-template-columns: 1fr .6fr 1.2fr; gap: 12px; }
     .map-core { width: 200px; height: 200px; }
@@ -219,9 +203,6 @@ const teams = [
   }
   @media (max-width: 560px) {
     .wrap { width: calc(100% - 36px); }
-    .logo-row { gap: 18px 23px; padding-block: 20px; }
-    .logo-row .utsa-logo { width: 133px; } .logo-row .uf-logo { width: 128px; }
-    .logo-row .dual-logo { width: 118px; } .school-logo,.nsf-logo { width: 47px; }
     .project-title { padding-block: 35px 40px; }
     h1 { font-size: 31px; }
     .team { font-size: 12px; gap: 8px 14px; margin-top: 24px; }
@@ -263,7 +244,6 @@ const teams = [
   .template-heading sup { font-size: 12px; margin-left: 4px; }
   .template-heading a { text-decoration: none; font-size: 16px; color: #fff; }
   .template-heading .text-center.text-sm { color: var(--mb-muted); line-height: 1.9; }
-  .logo-row { border-bottom: 0; max-width: 1050px; }
   .overview { display: block; max-width: 800px; border: 0; padding-top: 40px; }
   .section-intro h2, .features-heading h2 { text-align: center; font-size: 32px; margin: 0 0 24px; }
   .overview-copy { font-size: 17px; line-height: 1.8; }
@@ -287,7 +267,7 @@ const teams = [
 <style is:global>
   .project-header {background:#fcf7ee;position:relative;isolation:isolate;padding-bottom:26px;overflow:hidden}
   .project-header:before {content:"";position:absolute;inset:100px 0 0;background-image:var(--math-garden);background-position:center;background-size:cover;opacity:.42;z-index:-1;pointer-events:none}
-  .role-login-nav {background:#fcf7ee}.logo-row {position:relative}.template-heading {position:relative}.template-heading h1{max-width:950px}.template-heading > .kicker{color:#9c593d}
+  .role-login-nav {background:#fcf7ee}.template-heading {position:relative}.template-heading h1{max-width:950px}.template-heading > .kicker{color:#9c593d}
   .video-garden {position:relative;isolation:isolate;background:#17675f;padding:65px 0;margin:22px 0 75px;overflow:hidden}
   .video-garden:before{content:"";position:absolute;inset:0;z-index:-1;background-image:var(--math-garden);background-size:1440px auto;background-repeat:repeat-y;opacity:.45;pointer-events:none}
   .video-garden:after{content:"+";position:absolute;top:60px;right:3%;font-size:130px;line-height:1;color:#d5b67b;transform:rotate(12deg);z-index:-1;pointer-events:none}

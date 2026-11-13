@@ -62,6 +62,7 @@ Changes from the source, found with axe (WCAG 2.1 A/AA rules):
 
 - Darkened the module labels (`#b16643` to `#99583a`), the "Today's math" label (`#4e756f` to `#4b706b`), and the footer notes (`#74868b` to `#67777c`) in `src/pages/index.astro` to reach 4.5:1 contrast.
 - Added `public/favicon.svg`, which the page already linked to but the repository did not include.
+- Removed the row of five institution, school, and funder logos from the top of the page at the AIRIS Lab's request. The institutions remain named in the author affiliations.
 
 <details>
 <summary>Run the project page locally</summary>
