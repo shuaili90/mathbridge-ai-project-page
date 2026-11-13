@@ -56,6 +56,13 @@ The current prototype demonstrates selected Grade 6 mathematics topics. The broa
 
 The project page is built with Astro and deployed as a static GitHub Pages site. A push to `main` runs the included GitHub Actions workflow and publishes the generated HTML.
 
+This repository is a fork of [jovian-2wang/mathbridge-ai-project-page](https://github.com/jovian-2wang/mathbridge-ai-project-page). The AIRIS Lab copy is published at <https://shuaili90.github.io/mathbridge-ai-project-page/>. The workflow takes the site origin and base path from GitHub Pages, so nothing needs changing when the repository is transferred or renamed.
+
+Changes from the source, found with axe (WCAG 2.1 A/AA rules):
+
+- Darkened the module labels (`#b16643` to `#99583a`), the "Today's math" label (`#4e756f` to `#4b706b`), and the footer notes (`#74868b` to `#67777c`) in `src/pages/index.astro` to reach 4.5:1 contrast.
+- Added `public/favicon.svg`, which the page already linked to but the repository did not include.
+
 <details>
 <summary>Run the project page locally</summary>
 
